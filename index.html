@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 1000px;
+            text-indent: 50px;
+        }
+
+        div.a{
+            word-wrap: normal;
+        }
+
+        div.b{
+            word-wrap: break-word;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Brian's Weblog</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Blog</a></li>
+            <li><a href="about.html">About</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article>
+            <h2>Top five methods to increase game performance in Unity</h2>
+            <p><img src="performance.png" alt="An arrow pointing upwards following a series of enlarging colored blocks"></p>
+            <p><div class="a">
+                There are loads of way to help increase performance for your Unity projects, these are the five methods that I found most helpful.
+                Sprite/Asset packing can be easily utilized to cut down on file sizes and draw calls whilst building game objects.
+                Managing Level of detail for game objects at a distance is super helpful for cutting down on the amount of effort your machine needs to put into rendering.
+                By default Unity uses frustrum culling which only renders what is in the camera's view, using occlusion culling will allow you to render only what the player actually sees.
+                Memory management in DOTS will be the new way we manage to keep games running well and moving forward on our ever slowing hardware.
+                DOTS consists of three seperate pillars which will change the way we make and run games all together. The C# job system, ECS, and the burst complier. Without each of these it would only function at half the efficiency.
+            </div> </p>
+            <footer>
+                <p>Published on:
+                    <time datetime="2020-10-11 05:21">Oct 11</time>
+                    by <a>Brian.</a>
+                </p>
+            </footer>
+        </article>
+        <article>
+            <h2>Unity and DOTS</h2>
+            <p><img src="unity-dots.png" alt="Unity in white letters placed in the center of five seperately colored dots"></p>
+            <p>
+                <div class= "a">
+                    Unity currently uses a object oriented approach to game development. Most developers learned on this system and will continue to use it. Unity has better things planned for the future. 
+                    They will soon switch over to a data oriented system, otherwise know as DOTS. DOTS is the future of Unity and possibly the future of game development as a whole. This system has a tough learning curve to it though.
+                    So while it will bring performance and efficiency to a level we have not seen before some will refuse to switch over. currently the system is not stable enough for it to be used in every
+                    situation, but that should not stop us from future proofing ourselves! DOTS consists of three main parts. ECS, Entity Component System, is the basis of Unity's DOTS system. The goal of ECS is to treat everything as data instead of game objects like it has in the past.
+                    The C# job system will allow us to easily have code perform on multiple threads. Making our games more stable and make use of the entire processor. The burst complier, which is the third pillar, will help in this regard.
+            </div>
+            </p>
+            <footer>
+                <p>Published on:
+                    <time datetime="2020-10-11 05:21">Oct 11</time>
+                    by Brian.
+                </p>
+            </footer>
+        </article>
+    </section>
+</body>
+</html>
