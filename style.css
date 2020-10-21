@@ -42,8 +42,8 @@ article{
 }
 
 li{
+    width:200px;
     border: 1px dotted #ccc;
-    width:200px
 }
 
 .about{
