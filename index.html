@@ -3,39 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href="style.css">
     <title>Weblog</title>
-    <style>
-        div{
-            width: 1000px;
-            text-indent: 50px;
-        }
-
-        div.a{
-            word-wrap: normal;
-        }
-
-        div.b{
-            word-wrap: break-word;
-        }
-    </style>
 </head>
 <body>
     <header>
         <h1>Brian's Weblog</h1>
     </header>
     <nav>
-        <ul>
+        <ul id=navigation>
             <li><a href="index.html">Blog</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
-    <section>
+    <section id="blog">
         <h2>Posts</h2>
-        <article>
+        <article class="blog-post">
             <h3>Top five methods to increase game performance in Unity</h3>
             <p><img src="performance.png" alt="An arrow pointing upwards following a series of enlarging colored blocks"></p>
-            <p><div class="a">
+            <p>
                 There are loads of way to help increase performance for your Unity projects, these are the five methods that I found most helpful.
                 Sprite/Asset packing can be easily utilized to cut down on file sizes and draw calls whilst building game objects.
                 Managing Level of detail for game objects at a distance is super helpful for cutting down on the amount of effort your machine needs to put into rendering.
@@ -74,29 +61,28 @@
                         <td>Very effective</td>
                     </tr>
                 </table>
-            </div> 
+            </p>
             <footer>
                 <p>Published on:
                     <time datetime="2020-10-11 05:21">Oct 11</time>
-                    by <a>Brian.</a>
+                    by <address class="author"><a rel="author">Brian.</a></address>
                 </p>
             </footer>
         </article>
-        <article>
+        <article class="blog-post">
             <h3>Unity and DOTS</h3>
             <p><img src="unity-dots.png" alt="Unity in white letters placed in the center of five seperately colored dots"></p>
             <p>
-                <div class= "a">
                     Unity currently uses a object oriented approach to game development. Most developers learned on this system and will continue to use it. Unity has better things planned for the future. 
                     They will soon switch over to a data oriented system, otherwise know as DOTS. DOTS is the future of Unity and possibly the future of game development as a whole. This system has a tough learning curve to it though.
                     So while it will bring performance and efficiency to a level we have not seen before some will refuse to switch over. currently the system is not stable enough for it to be used in every
                     situation, but that should not stop us from future proofing ourselves! DOTS consists of three main parts. ECS, Entity Component System, is the basis of Unity's DOTS system. The goal of ECS is to treat everything as data instead of game objects like it has in the past.
                     The C# job system will allow us to easily have code perform on multiple threads. Making our games more stable and make use of the entire processor. The burst complier, which is the third pillar, will help in this regard.
-            </div>
+                    </p>
             <footer>
                 <p>Published on:
                     <time datetime="2020-10-11 05:21">Oct 11</time>
-                    by Brian.
+                    by <address class="author"><a rel="author">Brian.</a></address>
                 </p>
             </footer>
         </article>
