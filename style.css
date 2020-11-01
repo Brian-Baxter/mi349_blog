@@ -37,7 +37,7 @@ article{
     border:1px solid #000;
     width: 200px;
     position:sticky;
-    top:0;
+    top:15px;
 }
 
 #reasons{
@@ -56,4 +56,8 @@ li{
 #img{
     float:left;
     margin-right: 10px;
+}
+
+#footer{
+    background: #797878;
 }
