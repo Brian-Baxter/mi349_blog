@@ -22,11 +22,11 @@ p{
 
 #blog{
     border-top: 1px dotted #ccc;
-    display: flex;
 }
 
 .blog-post{
     border-bottom: 1px dotted #ccc;
+    display: flex;
 }
 
 article{
@@ -51,6 +51,9 @@ li{
 
 .about{
     line-height: 2em;
-    float: left;
+}
+
+#img{
+    float:left;
     margin-right: 10px;
 }
