@@ -22,6 +22,7 @@ p{
 
 #blog{
     border-top: 1px dotted #ccc;
+    display: flex;
 }
 
 .blog-post{
@@ -35,6 +36,8 @@ article{
 #navigation{
     border:1px solid #000;
     width: 200px;
+    position:sticky;
+    top:0;
 }
 
 #reasons{
@@ -48,4 +51,6 @@ li{
 
 .about{
     line-height: 2em;
+    float: left;
+    margin-right: 10px;
 }
