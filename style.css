@@ -62,3 +62,11 @@ li{
 #footer{
     background: #797878;
 }
+
+@media(max-width:400px){
+    html{background: #93f593;}
+    .blog-post{
+        display:none;
+        float:none;
+    }
+}
